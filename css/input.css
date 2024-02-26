@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+
+body{
+    font-family: "Vazirmatn", sans-serif;
+}
+
+.bg-main-dark{
+    --tw-bg-opacity: 1;
+    background-color: rgb(18 27 57/var(--tw-bg-opacity));
+    transition: 0.3s;
+}
+.bg-main-color{
+    --tw-bg-opacity: 1;
+    background-color: rgb(98 70 44/var(--tw-bg-opacity));
+}
+
+.text-main-color-light{
+    --tw-text-opacity: 1;
+    color: rgb(175 129 73/var(--tw-text-opacity));
+}
+
+.child{
+    line-height: 44px;
+}
+
+.text-main-color-light\/75{
+    color: rgba(175,129,73,.75);
+}
+
+#specialties #specialties-details div{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+#specialties #specialties-details .odd{
+    --tw-text-opacity: 1;
+    color: rgb(98 70 44/var(--tw-text-opacity));
+    background-color: rgba(98,70,44,.3);
+}
+#specialties-details .even{
+    --tw-text-opacity: 1;
+    color: rgb(18 27 57/var(--tw-text-opacity));
+    background-color: rgba(18,27,57,.3);
+}
+.service{
+    background-color: rgba(175,129,73,.3);
+}
+
+.btn-menu{
+    color: rgb(175 129 73/1);
+    font-size: 35px;
+    
+}
+.menu{
+    height: 0;
+    transition: .3s;
+}
+.menu.active{
+    /* display: block; */
+    height: 100vh;
+}
+
+/* 635 */
+@media (min-width: 635px) { 
+    .btn-menu{
+        display: none;
+    }
+ }
+ @media (min-width: 635px) { 
+    .menu{
+        display: none;
+    }
+ }
