@@ -1540,3 +1540,17 @@ body{
     line-height: 1;
   }
 }
+
+@keyframes homeScale {
+  0% {
+    background-size: 125%;
+  }
+  100% {
+    background-size: 135%;
+}
+}
+
+#home {
+  -webkit-animation: homeScale 2s ease-in-out 1 forwards;
+  animation: homeScale 2s ease-in-out 1 forwards;
+}
